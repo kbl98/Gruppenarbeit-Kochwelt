@@ -1,0 +1,181 @@
+body {
+    margin: 0px auto;
+    font-family: 'Raleway';
+
+}
+
+#header {
+    height: 103px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+#headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+
+
+}
+
+#headline {
+    font-size: 28px;
+    margin-top: 60px;
+}
+
+#headerLogo {
+    height: 75px;
+
+}
+
+nav>ul {
+    margin: 0px;
+}
+
+nav>ul a {
+    color: unset;
+    display: inline;
+    text-decoration: unset;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+nav a:hover, nav a:focus {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+#headlineImage {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 180px;
+}
+
+#headlineImage>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 3s;
+
+}
+
+#headlineImage>img:hover {
+    overflow: hidden;
+    scale: 1.5;
+    object-fit: cover;
+    transition: all 5s;
+
+
+
+}
+
+#dataBlock {
+    height: 100px;
+    border-bottom: 1px solid rgb(231, 227, 227);
+}
+
+.dataField {
+    padding: 0px;
+}
+
+.dataField li {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgb(243, 235, 235);
+    display: inline;
+    max-height: 10px;
+    margin-right: 10px;
+    padding: 4px 10px;
+}
+
+li img {
+    padding-right: 8px;
+    max-height: 12px;
+    object-fit: fill;
+}
+
+#portionInput {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#portionInput>input {
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    height: 40px;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 5px;
+
+}
+
+#portionInput>button {
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    height: 40px;
+    width: 160px;
+    border: none;
+    background-color: rgb(3, 155, 3);
+}
+
+#portionInput>button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 187, 5);
+}
+
+#ingredientsList {
+    padding: unset;
+}
+
+#ingredientsList li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    border-radius: 10px;
+    padding-left: 30px;
+
+}
+
+#ingredientsList :nth-child(odd) {
+    background-color: rgb(241, 238, 238)
+}
+
+#preparationText {
+    margin: 30px 0px 40px;
+
+}
+
+#receiptCreator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+
+#profileImage {
+    height: 80px;
+    border-radius: 100px;
+}
+
+#creatorName {
+    margin-left: 40px;
+    font-size: 28px;
+}
+
+footer {
+    height: 250px;
+    background-color: rgb(85, 83, 83);
+}

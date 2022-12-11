@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="fonts/">
+    <link rel="stylesheet" href="css/katja-css.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--<link rel="stylesheet" href="css/ingo_styles.css">-->
+    <script src="templates.js"></script>
+</head>
+<body>
+  <body onload="includeHTML();"
+    <!--header -->
+    <div w3-include-html="templates/header.html"></div>
+    <!--Rezept des Tages-->
+    <div class="days-menu-container">
+      <a href="rezept-1.html">
+        <img class="img-daymenu" src="img/rezept-1.jpg" alt="Hier ist ein Foto vom Tagesmenü"/>
+      </a>
+
+      <div class="info-daymenu">
+        <h2>Rezept des Tages: Kürbissuppe</h2>
+        <div class="text-daymenu">
+          Eine leckere Kürbissuppe ist der Immunbooster für die kalte Jahreszeit.
+          Durch reichlich Vitamin C wird der Kürbis zur Wunderwaffe gegen Grippe
+          und Erkältung. 
+        </div>
+        <a class="button" href="rezept-1.html">Rezept öffnen</a>
+      </div>
+    </div>
+    <!--Alle Rezepte-->
+    <div class="all-menu-container bg-gray">
+      <h2>Lust auf was Neues?</h2>
+      <div class="img-row">
+        <div class="sort-container">
+          <a href="rezept-1.html"
+            ><img
+              class="img-klein performance"
+              src="img/rezept-1.jpg"
+              alt="Hier ist ein Foto vom Rezept"
+          /></a>
+          <p>Kürbissuppe</p>
+        </div>
+        <div class="sort-container">
+          <a href="rezept-2.html"
+            ><img
+              class="img-klein performance"
+              src="img/rezept-2.jpg"
+              alt="Hier ist ein Foto vom Rezept"
+          /></a>
+          <p>text</p>
+        </div>
+        <div class="sort-container">
+          <a href="rezept-3.html"
+            ><img
+              class="img-klein performance"
+              src="img/rezept-3.jpg"
+              alt="Hier ist ein Foto vom Rezept"
+          /></a>
+          <p>text</p>
+        </div>
+      </div>
+    </div>
+    <!--Tagestip-->
+    <div class="tip-container">
+      <h2>Tip: Wie lässt sich Kürbis gut schneiden?</h2>
+      <div class="tip-content">
+        <div class="tip-text">
+          Viele mögen Kürbis - keiner mag ihn schneiden...Wie geht es leicher?
+          Hier unser Rat:<br>
+          Heizen Sie den Backofen auf 150 Grad Ober- und Unterhitze vor. Legen
+          Sie den Kürbis auf ein Backblech und wärmen Sie ihn dann etwa eine
+          halbe Stunde durch. Danach lassen Sie den Kürbis abkühlen - und schon
+          lässt er sich mit einem scharfen Messer ganz leicht und ohne
+          Widerstand schneiden.
+        </div>
+        <img class="img-klein" src="img/kurbis.jpg"  alt="Bild von Kuerbis"/>
+      </div>
+    </div>
+    <!--footer-->
+    <div w3-include-html="templates/footer.html"></div>
+   
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/katja-css.css">
+    <link rel="stylesheet" href="css/markus-css.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--<link rel="stylesheet" href="css/ingo_styles.css">-->
+    <script src="templates.js"></script>
+</head>
+<body>
+    <body onload="includeHTML()">
+    <div class="center-container">
+    <!--header-->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="contactformular pad-res">
+    <h1 class="contactheading">Kontaktformular</h1>
+    
+    <div class="container-formular">
+        <!--<img class="img-kontakt" src="img/rezept-1.jpg">-->
+        <form id="myform" action="https://gruppe-3730.developerakademie.net/send_mail.php" method="post">
+            <input class="kontakt-input" name="name" placeholder="Name"  type="text" required>
+            <textarea class="textarea" name="message" placeholder="Ihre Nachricht" required></textarea>
+            <button class="submit-button" type="submit"</button>Senden</button>
+        </form>
+        <!--<img class="img2-kontakt" src="img/rezept-1.jpg">-->
+    </div>
+</div>
+    <!--footer-->
+    <div w3-include-html="templates/footer.html"></div>
+    </div>
+    <script src="js/katja-script.js"></script>
+    
+</body>
+</html>

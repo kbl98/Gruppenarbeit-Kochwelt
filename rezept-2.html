@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rezept.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="templates.js"></script>
+
+<body onload="includeHTML(); calculateIngredients()">
+    
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class=content>
+
+    <h1 id="headline">Lachsspaghetti à la Carbonara</h1>
+    <div id="headlineImage">
+        <img src="img/rezept-2.jpg" alt="headlineImage">
+    </div>
+    <div id="dataBlock">
+        <ul id="topDataList" class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">20 Min.</li>
+            <li><img src="img/icons/brain-solid.svg" alt="brainIcon">normal</li>
+            <li><img src="img/icons/calendar-alt-regular.svg" alt="calendarIcon">11.11.2022</li>
+        </ul>
+    </div>  
+    <div id="portionInput">
+        Zutaten für <input id="portionInputField" type="number" min="1" value="2"><button onclick = calculateIngredients() >Portionen</button>
+    </div>
+
+    <ul id="ingredientsList">
+        <li><span class="amount">300</span>&nbspg Spaghetti oder Bucatini</li>
+
+    </ul>
+
+    <h2>Zubereitung</h2>
+    <div id="preparationDuration">
+        <ul class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">ca. 15 Minuten</li>
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">Gesamtzeit ca. 15 Minuten</li>
+        </ul>
+    </div>
+    <div id="preparationText">Spaghetti wie gewohnt kochen.
+
+        Zwiebeln zu möglichst feinen Würfelchen und den Lachs (hier bloß nicht an Qualität sparen) in kleine Stücke schneiden.
+        <br><br>
+        Den Knoblauch schälen und möglichst fein hacken.
+        Die Zwiebeln in Öl glasig dünsten, die Hälfte des Knoblauchs und den Lachs kurz darin anschwitzen und schnell wieder vom Herd nehmen.
+        <br><br>        
+        Sahne, Eier, (möglichst alten und frisch geriebenen) Parmesan, die andere Hälfte des Knoblauchs und Gewürze in einer Tasse verrühren.
+        
+        Die fertigen Spaghetti abschütten und ganz schnell zurück in den Topf geben.
+        <br><br>
+        Jetzt die Ei-Sahne-Masse darüber schütten und mit den Spaghetti verrühren. Sollte das Ei nicht durch die Resthitze des Topfes beginnen zu stocken, nochmal kurz auf die Herdplatte zurückstellen.
+        <br><br>
+        Zum Schluss noch den Lachs und die Zwiebeln einrühren.
+    </div>
+    
+    <h3>Rezept erstellt von</h3>
+    <div id="recipeCreator">
+        <img id="profileImage" src="img/fotoingo.jpg" alt="profileImage">
+        <span id="creatorName">Ingo</span>
+    </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+    <script src="/js/ingo-script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rezept.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="templates.js"></script>
+
+<body>
+    
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class=content>
+
+    <h1 id="headline">Vogtländische Bambes</h1>
+    <div id="headlineImage">
+        <img src="img/rezept-3.jpg" alt="headlineImage">
+    </div>
+    <div id="dataBlock">
+        <ul id="topDataList" class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">20 Min.</li>
+            <li><img src="img/icons/brain-solid.svg" alt="brainIcon">normal</li>
+            <li><img src="img/icons/calendar-alt-regular.svg" alt="calendarIcon">11.11.2022</li>
+        </ul>
+    </div>  
+    <div id="portionInput">
+        Zutaten für <input id="portionInputField" type="number" value="2" min="1" max="10"><button>Portionen</button>
+    </div>
+
+    <ul id="ingredientsList">
+        
+
+    </ul>
+
+    <h2>Zubereitung</h2>
+    <div id="preparationDuration">
+        <ul class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">ca. 15 Minuten</li>
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">Gesamtzeit ca. 45 Minuten</li>
+        </ul>
+    </div>
+    <div id="preparationText">
+        <p>
+        Die Kartoffeln schälen, waschen und die Hälfte der Kartoffeln für ca. ca. 20 Minuten weich kochen. 
+        Abgießen, etwas ausdampfen lassen und durch eine Kartoffelpresse Presse drücken.
+        </p>
+        <p>
+        In der Zwischenzeit die restlichen Kartoffeln grob reiben und durch ein Küchentuch ein wenig das Stärkewasser ausdrücken.
+        </p>
+        <p>
+        Die Zwiebel abziehen und fein hacken.
+        </p>
+        Danach beide Kartoffelmassen in eine Schüssel geben, Buttermilch und die Zwiebelstücke einrühren und mit Salz und Pfeffer würzen.
+        <p>
+        Nun das Butterschmalz in einer Pfanne erhitzen, den dickflüssigen Kartoffelbrei löffelweise hineinsetzen und etwas flach drücken. 
+        Die Vogtländischen Bambes von beiden Seiten knusprig braten.
+        </p>
+    </div>
+    
+    <h3>Rezept erstellt von</h3>
+    <div id="receiptCreator">
+        <img id="profileImage" src="img/fotomarkus.jpg" alt="profileImage">
+        <span id="creatorName">Markus</span>
+    </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+    <script src="/js/markus-script.js" defer></script>
+</body>
+
+</html>

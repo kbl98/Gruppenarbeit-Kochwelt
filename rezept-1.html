@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rezept.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="templates.js"></script>
+
+<body>
+    <body onload="includeHTML();"></body>
+    
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class=content>
+
+    <h1 id="headline">Kürbissuppe</h1>
+    <div id="headlineImage">
+        <img src="img/rezept-1.jpg" alt="headlineImage">
+    </div>
+    <div id="dataBlock">
+        <ul id="topDataList" class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">45 Min.</li>
+            <li><img src="img/icons/brain-solid.svg" alt="brainIcon">leicht</li>
+            <li><img src="img/icons/calendar-alt-regular.svg" alt="calendarIcon">11.11.2022</li>
+        </ul>
+    </div>
+    <div id="portionInput">
+        Zutaten für <input id="input" type="number" min="1" value="4"><button onclick="calculate()" id="calculate">Portionen</button>
+    </div>
+
+    <ul id="ingredientsList">
+        <li><span type="number" id="z1" class="amount">1000</span>&nbspg Hokkaido Kürbis</li>
+        <li><span type="number" id="z2"class="amount">2</span>&nbsp Zwiebel(n)</li>
+        <li><span type="number" id="z3"class="amount">2</span>&nbspKarotte(n)</li>
+        <li><span type="number" id="z4"class="amount">20</span>&nbspg Butter</li>
+        <li><span type="number" id="z5"class="amount">1000</span>&nbspml Gemüsebrühe</li>
+        <li><span type="number" id="z6"class="amount">400</span>&nbspml Kokosmilch</li>
+        <li><span type="number" id="z7"class="amount">20</span>&nbspg Kürbiskerne </li>
+        <li><span></span>&nbsp Salz und Pfeffer</li>
+        <li><span></span>&nbspetwas Chilli</li>
+        
+    </ul>
+
+    <h2>Zubereitung</h2>
+    <div id="preparationDuration">
+        <ul class="dataField">
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">ca. 45 Minuten</li>
+            <li><img src="img/icons/clock-regular.svg" alt="clockIcon">Gesamtzeit ca. 45 Minuten</li>
+        </ul>
+    </div>
+    <div id="preparationText">
+
+        Hokkaido waschen, halbieren, Kerne und Fasern auslösen und das
+        Fruchtfleisch in Würfel schneiden. Zwiebeln und Karotten schälen.
+        Zwiebeln würfeln und Karotten in kleine Stücke schneiden. Butter in
+        einem Topf erhitzen, Kürbiswürfel, Zwiebeln und Karotten mitbraten, mit
+        Gemüsebrühe ablöschen und ca. 25 Minuten köcheln lassen. Kokosmilch
+        zugeben, pürieren und nochmals aufkochen lassen. <br />Chilischote
+        waschen, entkernen und in feine Ringe schneiden. Kürbiskerne in einer
+        Pfanne ohne Fett rösten.<br />
+        Suppe mit Salz abschmecken und mit Chili, Pfeffer und Kürbiskernen
+        bestreut anrichten.
+    </div>
+    
+    <h3>Rezept erstellt von</h3>
+    <div id="recipeCreator">
+        <img id="profileImage" src="img/fotokatja.jpeg" alt="profileImage">
+        <span id="creatorName">Katja</span>
+    </div>
+    </div>
+ 
+    <div w3-include-html="templates/footer.html"></div>
+
+<script src="/js/katja-script.js"></script>
+ 
+</body>
+
+</html>

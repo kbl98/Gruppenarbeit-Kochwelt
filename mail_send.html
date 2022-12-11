@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/katja-css.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="templates.js"></script>
+
+    
+    <title>Kochwelt</title>
+</head>
+<body>
+    <body onload="includeHTML();">
+    <div class="master-container">
+        <div w3-include-html="templates/header.html"></div>
+        <div class="mailsend-container">
+            <h1>Email gesendet!</h1>
+            <button class="button"><a href="index.html">zurück</a></button>
+        </div> 
+        <div w3-include-html="templates/footer.html"></div>
+    </div>
+</body>
+</html>
+
